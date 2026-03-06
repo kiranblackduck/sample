@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XML Sample for Language Detection -->
+<application>
+    <language>XML</language>
+    <description>eXtensible Markup Language</description>
+    <version>1.0</version>
+
+    <features>
+        <feature>Hierarchical structure</feature>
+        <feature>Self-descriptive</feature>
+        <feature>Platform-independent</feature>
+        <feature>Supports namespaces</feature>
+    </features>
+
+    <users>
+        <user id="1" active="true">
+            <name>Alice Johnson</name>
+            <email>alice@example.com</email>
+            <age>30</age>
+            <roles>
+                <role>admin</role>
+                <role>user</role>
+            </roles>
+            <metadata>
+                <joined>2020-01-15</joined>
+                <lastLogin>2024-03-01</lastLogin>
+            </metadata>
+        </user>
+
+        <user id="2" active="false">
+            <name>Bob Smith</name>
+            <email>bob@example.com</email>
+            <age>25</age>
+            <roles>
+                <role>user</role>
+            </roles>
+        </user>
+
+        <user id="3" active="true">
+            <name>Charlie Brown</name>
+            <email>charlie@example.com</email>
+            <age>35</age>
+            <roles>
+                <role>moderator</role>
+                <role>user</role>
+            </roles>
+        </user>
+    </users>
+
+    <settings>
+        <theme>dark</theme>
+        <notifications>
+            <email enabled="true"/>
+            <push enabled="false"/>
+            <sms enabled="true"/>
+        </notifications>
+        <privacy>
+            <profileVisible>true</profileVisible>
+            <showEmail>false</showEmail>
+        </privacy>
+    </settings>
+
+    <server>
+        <host>localhost</host>
+        <port>8080</port>
+        <ssl>true</ssl>
+        <timeout unit="seconds">30</timeout>
+        <database type="postgresql">
+            <host>db.example.com</host>
+            <port>5432</port>
+            <name>myapp</name>
+            <poolSize>10</poolSize>
+        </database>
+    </server>
+
+    <metadata>
+        <created>2024-01-01T00:00:00Z</created>
+        <updated>2024-03-04T12:00:00Z</updated>
+        <version>1.0.0</version>
+    </metadata>
+</application>
